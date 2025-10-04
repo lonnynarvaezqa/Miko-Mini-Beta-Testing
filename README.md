@@ -55,18 +55,20 @@ The program was facilitated by a dedicated Beta Team that served as the primary 
 
 ##  Testing Documentation
 
-The core of my participation is documented in the following sections:
+## 📝 Testing Documentation
 
-### 1. Test Cases (`/TestCases`)
-* **[AI Interaction Testing](/TestCases/AI_Interaction_Testing.md)**: Specific test cases to evaluate the quality, safety, and consistency of AI-driven conversations.
+The core of my participation is documented across three key areas:
 
-### 2. Test Results (`/TestResults`)
-Contains logs, summaries, and detailed feedback submitted to the Beta Team for each testing cycle. This documentation includes:
-* Testing cycle information and feedback criteria.
-* Test pass/fail results.
-* Screenshots or evidence of reported defects/bugs.
+### 1. Test Planning and Strategy (`/TestPlan.md`)
+* ** [Miko Mini Beta Program: Test Plan](Documentation/Test_Plan.md)**: This document outlines the **strategic approach** to the Beta Program. It details the overall test objectives, **Entry/Exit criteria**, **Risk Management**, and the **iterative schedule** used to manage the six testing cycles.
 
-### 3. Program Information (`/Documentation`)
+### 2. Test Cases Log (`/TestCases`)
+* **[AI Interaction Testing Log](/TestCases/AI_Interaction_Testing.md)**: A detailed log containing the **Cycle 0 Setup** and the subsequent **six cycles** of test cases. It documents the steps, expected results, and success criteria for all functional, AI interaction, and localization testing conducted.
+
+### 3. Test Results (`/TestResults`)
+This directory contains confidential logs and summaries of the outcomes from each testing cycle. This is where the **Pass/Fail results** and detailed **qualitative feedback** submitted to the Miko Beta Team are maintained.
+
+### 4. Program Information (`/Documentation`)
 * **[Program Overview](/Documentation/Program_Overview.md)**: A summary of the Miko Mini robot and the company's mission.
 * **[Communication Channel](/Documentation/Communication_Channel.md)**: Confirms that **Slack** was the primary channel for all interactions, including receiving weekly activities and providing feedback. *(Reference: Video Slides 0:40 - 0:44)*
 
