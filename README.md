@@ -1,6 +1,6 @@
 # Miko Mini Beta Testing Program Participation
 
-## 🤖 Project: Miko Mini Beta Program
+##  Project: Miko Mini Beta Program
 This repository documents my participation as a **beta tester** in the testing program for **Miko Mini**, an interactive AI companion robot designed to enrich children's lives through educational content and safe conversations.
 
 My role focused on **Quality Assurance (QA)**, providing direct feedback on the product to influence the development roadmap, as outlined in the program's goals.
