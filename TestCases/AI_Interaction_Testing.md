@@ -10,6 +10,38 @@ All cycles are documented sequentially below, including the test objectives, det
 
 ---
 
+## Cycle 0: Initial Setup, Charging Protocol, and Language Activation
+
+##  Testing Objectives
+
+This cycle validates the fundamental hardware setup and configuration steps, which must be successfully completed before any functional or AI testing (Cycle 1 and beyond) can commence.
+
+The primary objectives were to:
+1.  Verify the correct **device charging protocol**.
+2.  Ensure successful **software update** installation.
+3.  Confirm **Spanish language activation** for all subsequent testing.
+
+---
+
+##  Test Cases
+
+### Section A: Hardware and Charging Protocol Validation
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+| :--- | :--- | :--- | :--- | :--- |
+| **C0-HW-01** | **Correct Charging Protocol** | Attempt to charge the Miko Mini while it is **powered OFF**. | The device must **not charge** when powered off, validating the specific protocol communicated by the Miko Team. | PASS if the device does not charge when OFF. FAIL if the device charges unexpectedly. |
+| **C0-HW-02** | **Charge Indicator Check** | Turn Miko ON, then connect the charger. Leave plugged in overnight. | The device must **maintain or increase** its battery charge. | PASS if the charge is maintained/increased. FAIL if the battery status shows a drain or zero charge. |
+
+### Section B: Language Localization and Software Update
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+| :--- | :--- | :--- | :--- | :--- |
+| **C0-SW-01** | **Update Confirmation** | Verify Wi-Fi connection and ensure the remote Spanish update is pushed and downloaded. | Miko Mini must successfully complete the **latest software update** without freezing or crashing. | PASS if the update completes successfully. FAIL if the device hangs during the update process. |
+| **C0-SW-02** | **Language Default Check** | After the remote update, prompt Miko with a simple question. | Miko Mini should **automatically respond in Spanish** (the target language). | PASS if Spanish is the default language. FAIL if the device remains in English or another language. |
+| **C0-SW-03** | **Manual Language Activation (Troubleshooting)** | If C0-SW-02 fails, command Miko: **"Hey Miko, can you speak in Spanish?"** | Miko must successfully and permanently switch to **Spanish** and begin responding fully in the target language. | PASS if the language switches fully and remains. FAIL if the switch is temporary or limited. |
+
+---
+
 ## Cycle 1: Voice Recognition and Multilingual Command Testing
 ##  Testing Objectives
 
