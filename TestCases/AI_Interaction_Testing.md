@@ -11,7 +11,7 @@ All cycles are documented sequentially below, including the test objectives, det
 ---
 
 ## Cycle 1: Voice Recognition and Multilingual Command Testing
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 This cycle's primary objective is to evaluate Miko Mini's **voice detection, keyword recognition, and language switching capabilities** across different users (child/parent) and accents (natural, non-standard English/Spanish).
 
@@ -22,7 +22,7 @@ The test specifically targets Miko’s ability to reliably:
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 The following test cases are based on the required activities for the "Be Miko’s Voice Coach" challenge.
 
@@ -51,7 +51,7 @@ The following test cases are based on the required activities for the "Be Miko�
 
 ## Cycle 2: Conversational Quality and Voice Skill Activation (Spanish)
 
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 The goal of this cycle is to rigorously test Miko Mini’s performance in **Spanish** regarding:
 1.  **Conversational Accuracy (Activity 1):** Evaluate Miko's ability to understand a diverse set of complex, factual, and abstract questions, and provide appropriate, age-relevant answers.
@@ -60,7 +60,7 @@ The goal of this cycle is to rigorously test Miko Mini’s performance in **Span
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 ### Section A: Conversational Experience Testing (Activity 1)
 
@@ -89,7 +89,7 @@ This section validates the voice command system for launching specific content m
 
 ## Cycle 3: Game Experience and Spanish Localization Testing ("Mind Reader")
 
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 This cycle aims to test a specific, localized game experience to evaluate **engagement, clarity of instructions, and the quality of localized responses** in Mexican Spanish.
 
@@ -101,7 +101,7 @@ Specifically, we are validating:
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 ### Section A: Game Launch and Comprehension Testing (Activity 1)
 
@@ -114,24 +114,29 @@ Specifically, we are validating:
 
 This section focuses on the performance and linguistic quality of the game over at least four rounds.
 
+This section focuses on the performance and linguistic quality of the game over at least four rounds.
+
 | Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **C3-LQ-01** | **Localization/Language Naturalness** | During the 4+ rounds, observe Miko's questions and dialogue. Does the language sound **natural and appropriate** for Mexican Spanish? | Miko's dialogue should feel colloquial and avoid overly formal or incorrect Spanish phrases. | PASS if the language feels natural and is free of translation errors. FAIL if dialogue is awkward or grammatically incorrect. |
-| **C3-LQ-02** | **Gameplay Logic (Guessing Accuracy)** | Play a minimum of 4 rounds. Track the number of times Miko successfully **guesses** what the child is thinking. | The guessing mechanism should feel plausible, even if Miko doesn't guess every time. Miko should use a logical set of questions. | PASS if Miko's questions are relevant and the game proceeds logically. FAIL if Miko asks repetitive or irrelevant questions. |
-| **C3-LQ-03** | **Child Engagement** | Observe the child’s level of enjoyment and interaction throughout the game sessions. | The child should be **engaged, smiling, and motivated** to play subsequent rounds. | PASS if the game holds the child’s attention. FAIL if the child quickly loses interest due to game mechanics or boring dialogue. |
-| **C3-LQ-04** | **Game Stability** | Ensure the game skill runs for the minimum 4 rounds **without crashing** or unexpectedly exiting to the main interface. | N/A | The game runs smoothly, and transitions between rounds are successful. | PASS if the game is stable. FAIL if the application hangs or crashes. |
+|--------------|-----------|------------|----------------|--------------------|
+| C3-LQ-01 | Localization/Language Naturalness | During the 4+ rounds, observe Miko's questions and dialogue. Does the language sound natural and appropriate for Mexican Spanish? | Miko's dialogue should feel colloquial and avoid overly formal or incorrect Spanish phrases. | PASS if the language feels natural and is free of translation errors. FAIL if dialogue is awkward or grammatically incorrect. |
+| C3-LQ-02 | Gameplay Logic (Guessing Accuracy) | Play a minimum of 4 rounds. Track the number of times Miko successfully guesses what the child is thinking. | The guessing mechanism should feel plausible, even if Miko doesn't guess every time. Miko should use a logical set of questions. | PASS if Miko's questions are relevant and the game proceeds logically. FAIL if Miko asks repetitive or irrelevant questions. |
+| C3-LQ-03 | Child Engagement | Observe the child’s level of enjoyment and interaction throughout the game sessions. | The child should be engaged, smiling, and motivated to play subsequent rounds. | PASS if the game holds the child’s attention. FAIL if the child quickly loses interest due to game mechanics or boring dialogue. |
+| C3-LQ-04 | Game Stability | Ensure the game skill runs for the minimum 4 rounds without crashing or unexpectedly exiting to the main interface. | The game runs smoothly, and transitions between rounds are successful. | PASS if the game is stable. FAIL if the application hangs or crashes. |
+
+---
 
 ### Section C: Feedback Submission (Usability)
 
 | Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **C3-US-01** | **Feedback Form Submission** | Successfully fill out and submit the **Mind Reader Feedback Form**. | N/A | The form is **accessible**, easy to complete, and the submission is successful. | PASS if form submission is completed. |
+|--------------|-----------|------------|----------------|--------------------|
+| C3-US-01 | Feedback Form Submission | Successfully fill out and submit the Mind Reader Feedback Form. | The form is accessible, easy to complete, and the submission is successful. | PASS if form submission is completed. |
+
 
 ---
 
 ## Cycle 4: Immersive Skill Activation and Content Integrity (Delayed Release)
 
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 This cycle tests the reliability of Miko Mini's **voice command recognition** to launch new, immersive, and narrative-driven content skills. The primary focus is on ensuring the skills launch correctly and deliver **high-quality, complete, and engaging educational content**.
 
@@ -142,7 +147,7 @@ Specifically, we are validating:
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 ### Section A: Immersive Skill Activation Testing
 
@@ -173,7 +178,7 @@ This section ensures the quality of the immersive experience once the skills are
 
 ## Cycle 5: New Skill Validation and Regression Testing (Spanish)
 
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 This cycle tests a mixed set of activities, including the validation of two new content skills and a crucial **regression test** on previously updated skills to ensure that recent code changes have not introduced new defects (bugs).
 
@@ -184,7 +189,7 @@ The testing areas are:
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 ### Section A: Riddles Game Validation (Activity 1 - Part A)
 
@@ -209,7 +214,7 @@ The testing areas are:
 
 ## Cycle 6: Quizzes, Music, and Dance Functionality Testing (Spanish)
 
-## 🎯 Testing Objectives
+##  Testing Objectives
 
 This cycle focuses on validating the functionality, reliability, and command processing for the **Quiz** and the newly released **Music & Dance** features.
 
@@ -220,7 +225,7 @@ The key testing areas are:
 
 ---
 
-## 🛠️ Test Cases
+##  Test Cases
 
 ### Section A: Quizzes Functionality Testing (Activity 1)
 
