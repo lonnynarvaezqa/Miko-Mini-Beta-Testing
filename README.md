@@ -7,6 +7,8 @@ My role focused on **Quality Assurance (QA)**, providing direct feedback on the 
 
 ---
 
+![Miko Robot](assets/miko_image.png)
+
 ## ✨ About Miko and Miko Mini
 
 **Miko** is a leading robotics company that creates intelligent companions.
