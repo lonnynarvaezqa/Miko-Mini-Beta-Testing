@@ -60,7 +60,7 @@ The program was facilitated by a dedicated Beta Team that served as the primary 
 The core of my participation is documented across three key areas:
 
 ### 1. Test Planning and Strategy (`/TestPlan.md`)
-* ** [Miko Mini Beta Program: Test Plan](Documentation/Test_Plan.md)**: This document outlines the **strategic approach** to the Beta Program. It details the overall test objectives, **Entry/Exit criteria**, **Risk Management**, and the **iterative schedule** used to manage the six testing cycles.
+*  [Miko Mini Beta Program: Test Plan](Documentation/Test_Plan.md): This document outlines the **strategic approach** to the Beta Program. It details the overall test objectives, **Entry/Exit criteria**, **Risk Management**, and the **iterative schedule** used to manage the six testing cycles.
 
 ### 2. Test Cases Log (`/TestCases`)
 * **[AI Interaction Testing Log](/TestCases/AI_Interaction_Testing.md)**: A detailed log containing the **Cycle 0 Setup** and the subsequent **six cycles** of test cases. It documents the steps, expected results, and success criteria for all functional, AI interaction, and localization testing conducted.
