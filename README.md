@@ -9,7 +9,7 @@ My role focused on **Quality Assurance (QA)**, providing direct feedback on the 
 
 ![Miko Robot](assets/miko_image.png)
 
-## ✨ About Miko and Miko Mini
+## About Miko and Miko Mini
 
 **Miko** is a leading robotics company that creates intelligent companions.
 
@@ -19,7 +19,23 @@ My role focused on **Quality Assurance (QA)**, providing direct feedback on the 
 
 ---
 
-## 🎯 Beta Testing Goals & Expectations
+# Initial Setup and Troubleshooting Log
+
+This document logs critical issues encountered during the initial Miko Mini setup and provides solutions verified by the Beta Team.
+
+## 1. Device Charging Procedure
+* **Issue:** Device does not charge when plugged in while powered off.
+* **Resolution:** Confirmed that Miko Mini **charges only when it is turned ON** (power button pressed before plugging in). This is a vital difference from standard device charging protocols.
+
+## 2. Spanish Language Update/Localization
+* **Issue:** Miko remained in English even after the Spanish update was pushed remotely by the Miko Team.
+* **Workaround:** The user manually triggered the language switch by saying the command: **"Hey Miko, can you speak in Spanish?"** This resolved the issue and allowed the device to begin responding in Spanish.
+
+*Conclusion: Successfully ensured Miko was updated and fully operational in the primary testing language (Spanish) before commencing Cycle 1 activities.*
+
+---
+
+## Beta Testing Goals & Expectations
 
 The **Miko Mini Beta Program** is an exclusive opportunity to gain early access to new features and become an integral part of the community-driven development process.
 
@@ -31,7 +47,7 @@ My key contributions were to:
 
 ---
 
-## 👥 Beta and Product Teams
+##  Beta and Product Teams
 
 The program was facilitated by a dedicated Beta Team that served as the primary contact for feedback and activities:
 
@@ -42,7 +58,7 @@ The program was facilitated by a dedicated Beta Team that served as the primary 
 
 *(Reference: Video Slides 0:19 - 0:25)*
 
-### 🛠️ Key Product Team Members
+###  Key Product Team Members
 | Name | Title | Contribution Description |
 | :--- | :--- | :--- |
 | **Jinal Jobalia** | Content Head | Leads the creative mind behind Miko Mini's fun stories and games. |
@@ -53,7 +69,7 @@ The program was facilitated by a dedicated Beta Team that served as the primary 
 
 ---
 
-## 📝 Testing Documentation
+##  Testing Documentation
 
 The core of my participation is documented in the following sections:
 
@@ -72,7 +88,7 @@ Contains logs, summaries, and detailed feedback submitted to the Beta Team for e
 
 ---
 
-## 🚀 Next Steps
+##  Next Steps
 
 Detailed program specifics, including the testing cycle, feedback criteria, and incentives, were shared via Slack. This repository will be continuously updated with testing progress and results as the program moves forward.
 
