@@ -19,22 +19,6 @@ My role focused on **Quality Assurance (QA)**, providing direct feedback on the 
 
 ---
 
-# Initial Setup and Troubleshooting Log
-
-This document logs critical issues encountered during the initial Miko Mini setup and provides solutions verified by the Beta Team.
-
-## 1. Device Charging Procedure
-* **Issue:** Device does not charge when plugged in while powered off.
-* **Resolution:** Confirmed that Miko Mini **charges only when it is turned ON** (power button pressed before plugging in). This is a vital difference from standard device charging protocols.
-
-## 2. Spanish Language Update/Localization
-* **Issue:** Miko remained in English even after the Spanish update was pushed remotely by the Miko Team.
-* **Workaround:** The user manually triggered the language switch by saying the command: **"Hey Miko, can you speak in Spanish?"** This resolved the issue and allowed the device to begin responding in Spanish.
-
-*Conclusion: Successfully ensured Miko was updated and fully operational in the primary testing language (Spanish) before commencing Cycle 1 activities.*
-
----
-
 ## Beta Testing Goals & Expectations
 
 The **Miko Mini Beta Program** is an exclusive opportunity to gain early access to new features and become an integral part of the community-driven development process.
@@ -85,6 +69,22 @@ Contains logs, summaries, and detailed feedback submitted to the Beta Team for e
 ### 3. Program Information (`/Documentation`)
 * **[Program Overview](/Documentation/Program_Overview.md)**: A summary of the Miko Mini robot and the company's mission.
 * **[Communication Channel](/Documentation/Communication_Channel.md)**: Confirms that **Slack** was the primary channel for all interactions, including receiving weekly activities and providing feedback. *(Reference: Video Slides 0:40 - 0:44)*
+
+---
+
+# Initial Setup and Troubleshooting Log
+
+This document logs critical issues encountered during the initial Miko Mini setup and provides solutions verified by the Beta Team.
+
+## 1. Device Charging Procedure
+* **Issue:** Device does not charge when plugged in while powered off.
+* **Resolution:** Confirmed that Miko Mini **charges only when it is turned ON** (power button pressed before plugging in). This is a vital difference from standard device charging protocols.
+
+## 2. Spanish Language Update/Localization
+* **Issue:** Miko remained in English even after the Spanish update was pushed remotely by the Miko Team.
+* **Workaround:** The user manually triggered the language switch by saying the command: **"Hey Miko, can you speak in Spanish?"** This resolved the issue and allowed the device to begin responding in Spanish.
+
+*Conclusion: Successfully ensured Miko was updated and fully operational in the primary testing language (Spanish) before commencing Cycle 1 activities.*
 
 ---
 
