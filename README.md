@@ -58,7 +58,6 @@ The program was facilitated by a dedicated Beta Team that served as the primary 
 The core of my participation is documented in the following sections:
 
 ### 1. Test Cases (`/TestCases`)
-* **[Functional Testing](/TestCases/Functional_Testing.md)**: Documentation of test cases designed to validate the robot's basic features (e.g., power-on/off, movement, speech recognition).
 * **[AI Interaction Testing](/TestCases/AI_Interaction_Testing.md)**: Specific test cases to evaluate the quality, safety, and consistency of AI-driven conversations.
 
 ### 2. Test Results (`/TestResults`)
