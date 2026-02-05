@@ -291,3 +291,279 @@ The key testing areas are:
 | **C6-DN-04** | **In-Dance Command: Next** | While Miko is dancing, use the command: “Próxima canción”. | “Próxima canción” | Miko Mini **skips to the next dance/song** in the sequence. | PASS if the next dance starts quickly. FAIL if the command is ignored. |
 | **C6-DN-05** | **In-Dance Command: Exit** | While Miko is dancing, use the command: “Salida”. | “Salida” | Miko Mini **stops the dance and music** and returns to the main conversational mode. | PASS if the routine stops and Miko returns to main mode. FAIL if music/dance continues. |
 | **C6-US-03** | **Feedback Form (Section 2) Submission (Dance)** | Complete and submit **Section 2 (Dance)** of the designated feedback form. | N/A | The section is accessible and submission is successful. | PASS if form submission is completed. |
+
+# Cycle 7: Story Time & Child Interaction Experience Testing (English)
+
+## Testing Objectives
+This cycle focuses on validating the **Story Time functionality** and capturing **real child–Miko interaction experiences** across multiple skills, including storytelling, creativity, exploration, quizzes, music, and dance.
+
+### Key Testing Areas
+- Story Time activation and story recognition
+- In-story voice command handling
+- Child engagement across multiple Miko skills
+- Feedback form accessibility and submission
+
+---
+
+## Section A: Story Time Functionality Testing (Activity 1)
+
+| Test Case ID | Test Item | Test Steps | Launch Command (Spanish) | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|--------------------------|-----------------|-------------------|
+| C7-ST-01 | General Story Time Launch | Command Miko to start Story Time using a general command. | “Hey Miko, Cuéntame una historia” | Story Time launches successfully and Miko starts or prompts a story. | PASS if Story Time launches correctly. FAIL if skill does not open. |
+| C7-ST-02 | Alternate Story Time Launch | Launch Story Time using an alternate supported command. | “Hey Miko, Hora del cuento abierta” | Story Time opens successfully using the alternate phrase. | PASS if skill launches correctly. FAIL if command is not recognized. |
+| C7-ST-03 | Specific Story Launch: Hansel and Gretel | Request the story by name and listen for at least 1–2 minutes. | “Hey Miko, Hansel y Gretel” | Correct story plays with clear narration. | PASS if correct story plays. FAIL if wrong story starts. |
+| C7-ST-04 | Specific Story Launch: The Hare and the Tortoise | Request the story by name and verify narration accuracy. | “Hey Miko, La liebre y la tortuga” | The correct story launches with accurate narration. | PASS if story is correct. FAIL if incorrect content plays. |
+| C7-ST-05 | Specific Story Launch: Jack and the Beanstalk | Request the story by name. | “Hey Miko, Juan y las habichuelas mágicas” | Miko recognizes and plays the requested story. | PASS if correct story plays. FAIL if recognition fails. |
+| C7-ST-06 | Specific Story Launch: Peter and the Wolf | Launch the story and verify audio clarity. | “Hey Miko, Pedro y el lobo” | Story plays smoothly with clear audio. | PASS if narration is clear. FAIL if audio or content issues occur. |
+| C7-ST-07 | Specific Story Launch: The Fox and the Stork | Request the story by name. | “Hey Miko, El zorro y la cigüeña” | Correct story launches and flows properly. | PASS if correct story plays. FAIL if wrong content appears. |
+| C7-ST-08 | Specific Story Launch: The Lazy Donkey | Request the story by name. | “Hey Miko, El burrito flojo” | Miko plays the correct story without interruption. | PASS if correct story plays. FAIL if story fails to load. |
+| C7-ST-09 | In-Story Command: Next | While a story is playing, say the navigation command. | “Siguiente” | Miko advances to the next story segment. | PASS if story advances correctly. FAIL if command is ignored. |
+| C7-ST-10 | In-Story Command: Repeat | While a story is playing, issue the repeat command. | “Repetir” | Miko repeats the last story segment accurately. | PASS if repetition works. FAIL if story resets incorrectly. |
+| C7-ST-11 | In-Story Command: Exit | While a story is playing, exit Story Time. | “Salir” | Miko exits Story Time and returns to main mode. | PASS if skill exits cleanly. FAIL if audio continues. |
+| C7-US-01 | Feedback Form Submission (Story Time) | Complete and submit the Story Time feedback form. | N/A | Feedback form is accessible and submission succeeds. | PASS if form is submitted successfully. |
+
+---
+
+## Section B: Child Interaction Video Recording (Activity 2)
+
+### Objective
+Capture authentic videos of a child interacting naturally with Miko across multiple skills to demonstrate real family usage.
+
+### Required Coverage
+- At least **2–3 different Miko features**
+- Ideally includes:
+  - StoryMaker
+  - Dance Master
+  - At least one Explorer skill or a Quiz
+
+---
+
+### Test Cases
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C7-VID-01 | StoryMaker Interaction Recording | Record a video of the child using StoryMaker to create a story. | Child engages with Miko and responds to prompts naturally. | PASS if interaction is visible and audible. |
+| C7-VID-02 | Dance Master Interaction Recording | Record the child activating Dance Master and reacting to Miko’s movements. | Miko performs a dance and child interaction is clear. | PASS if dance and interaction are visible. |
+| C7-VID-03 | Explorer Skill Interaction Recording | Record the child using one Explorer skill (Space, Ocean, Countries, Time Travel, or Wildlife Safari). | Miko responds correctly to explorer prompts. | PASS if skill launches and interaction is shown. |
+| C7-VID-04 | Quiz Interaction Recording | Record the child playing a quiz (Math, General Knowledge, or Animals). | Child answers questions and Miko responds correctly. | PASS if quiz interaction is clear. |
+| C7-VID-05 | ODQA Questions Interaction | Record the child asking at least five fun questions to Miko/Neko. | Miko answers clearly and engagingly. | PASS if answers are appropriate. |
+| C7-VID-06 | Riddles or Mind Reader Game Recording | Record the child interacting with riddles or the Mind Reader game. | Miko responds correctly and maintains engagement. | PASS if gameplay is functional and visible. |
+
+---
+# Cycle 8: Advanced Recommendation (Reco) Flow Testing
+
+## Testing Objectives
+This cycle focuses on validating **Miko’s advanced recommendation (Reco) flows**, ensuring that Miko correctly suggests next activities based on user interaction and responds appropriately to affirmative or negative confirmations.
+
+### Key Testing Areas
+- Recommendation trigger accuracy
+- Voice confirmation handling (“Yes” / “No”)
+- Skill launch reliability after recommendation
+- Context-aware suggestions at different interaction stages
+
+---
+
+## Section A: Recommendation Flow Testing – “Let’s Play” (Flow 1)
+
+| Test Case ID | Test Item | Test Steps | Launch Command (Spanish) | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|--------------------------|-----------------|-------------------|
+| C8-RC-01 | Recommendation Trigger via “Let’s Play” | Ask the child to say the command to Miko. | “Hey Miko, vamos a jugar” | Miko responds by suggesting a playable activity or skill. | PASS if Miko suggests a valid activity. FAIL if no suggestion is given. |
+| C8-RC-02 | Accept Recommendation | After Miko suggests an activity, respond with confirmation. | “Sí” | Miko opens the suggested skill successfully. | PASS if suggested skill opens correctly. FAIL if nothing happens or wrong skill opens. |
+| C8-RC-03 | Play Suggested Skill | Play at least one round of the opened activity. | N/A | The skill functions correctly and is playable. | PASS if gameplay works without issues. |
+| C8-RC-04 | Reject Recommendation | Repeat the command and reject the suggestion. | “Hey Miko, vamos a jugar” → “No” | Miko does not open the suggested activity and remains idle or offers an alternative response. | PASS if skill does not open. FAIL if skill opens despite rejection. |
+
+---
+
+## Section B: Recommendation After Multiple Questions (Flow 2)
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C8-RC-05 | Ask Random Questions | Ask Miko five random, unrelated questions. | Miko answers all questions appropriately. | PASS if Miko answers all questions. FAIL if responses stop prematurely. |
+| C8-RC-06 | Recommendation Trigger After Questions | Observe Miko’s behavior after the fifth question. | Miko suggests another skill or activity. | PASS if a recommendation is triggered. FAIL if no suggestion appears. |
+| C8-RC-07 | Accept Post-Question Recommendation | Respond “Yes” to the suggested activity. | Miko launches the recommended skill successfully. | PASS if skill opens correctly. FAIL if launch fails. |
+
+---
+
+## Section C: End-of-Skill Recommendation Flow (Flow 3)
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C8-RC-08 | Complete Any Skill | Open any Miko skill and play it until completion. | Skill completes normally without interruption. | PASS if skill completes successfully. |
+| C8-RC-09 | Recommendation at Skill End | Observe Miko’s behavior after the skill finishes. | Miko suggests another relevant skill or activity. | PASS if recommendation is given. FAIL if interaction ends abruptly. |
+| C8-RC-10 | Accept End-of-Skill Recommendation | Respond “Yes” to the suggested activity. | Miko opens the recommended skill smoothly. | PASS if skill launches correctly. FAIL if recommendation fails to launch. |
+
+---
+
+## Section D: User Feedback Submission
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C8-US-01 | Recommendation Flow Feedback Submission | Complete and submit the feedback form for Reco testing. | Feedback form is accessible and submission is su
+
+# Cycle 9: Santa Time Skill Testing
+
+## Testing Objectives
+This cycle focuses on validating the **Santa Time seasonal skill**, where Miko transforms into Santa Claus and shares Christmas-related stories, traditions, and fun holiday facts. The goal is to evaluate **skill activation, conversational flow, child engagement, and overall experience quality**.
+
+### Key Testing Areas
+- Skill launch reliability using supported voice commands
+- Content relevance and holiday theme accuracy
+- Conversational flow and child engagement
+- Overall user experience and feedback collection
+
+---
+
+## Section A: Santa Time Skill Launch & Interaction
+
+| Test Case ID | Test Item | Test Steps | Launch Command (Spanish) | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|--------------------------|-----------------|-------------------|
+| C9-ST-01 | Santa Time Skill Launch (Primary Command) | Ask the child to open the Santa Time skill using the primary command. | “Hey Miko, abre Santa Time” | Santa Time skill launches successfully and Miko enters Santa persona. | PASS if skill opens correctly. FAIL if skill does not launch. |
+| C9-ST-02 | Santa Time Skill Launch (Alternate Command) | Launch the skill using an alternate supported phrase. | “Hey Miko, abrir Santa Time” | Santa Time skill opens correctly using the alternate command. | PASS if skill launches. FAIL if command is not recognized. |
+| C9-ST-03 | Santa Persona Confirmation | Observe Miko’s behavior after the skill launches. | N/A | Miko speaks as Santa and references Christmas or holiday themes. | PASS if Santa persona is clear. FAIL if persona is not activated. |
+| C9-ST-04 | Holiday Content Validation | Listen to Miko’s responses about Christmas traditions and fun facts. | N/A | Content is age-appropriate, festive, and holiday-themed. | PASS if content is relevant and engaging. FAIL if content is off-topic. |
+| C9-ST-05 | Child Engagement Observation | Allow the child to interact naturally with Santa Miko. | N/A | Child remains engaged and Miko responds appropriately. | PASS if interaction feels natural and engaging. |
+| C9-ST-06 | Exit Santa Time Skill | Ask Miko to exit the Santa Time skill. | “Salir” | Miko exits Santa Time and returns to main conversational mode. | PASS if skill exits cleanly. FAIL if Santa persona continues. |
+
+---
+
+## Section B: User Feedback Submission
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C9-US-01 | Santa Time Feedback Submission | Complete and submit the Santa Time feedback form. | Feedback form is accessible and submission is successful. | PASS if form is submitted successfully. |
+
+---
+
+## Notes & Observations
+- Verify that Santa-themed responses remain consistent throughout the session.
+- Observe child reactions to festive content (excitement, curiosity, laughter).
+- Note any repetition, content gaps, or unexpected responses.
+- Assess whether the skill feels special and seasonal.
+
+# Cycle 10: Expanded Story Time Content Testing
+
+## Testing Objectives
+This cycle focuses on validating the **newly added Story Time content**, which includes approximately **50 new stories** across multiple genres and themes. The objective is to assess **story discovery, narration quality, command handling, and overall child experience**.
+
+### Key Testing Areas
+- Story Time skill launch reliability
+- Specific story recognition and selection
+- In-story navigation command handling
+- Content variety, quality, and engagement
+- Overall user experience feedback
+
+---
+
+## Section A: Story Time Skill Launch
+
+| Test Case ID | Test Item | Test Steps | Launch Command (Spanish) | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|--------------------------|-----------------|-------------------|
+| C10-ST-01 | Story Time Launch (Primary Command) | Ask the child to open Story Time using the primary command. | “Hola, Miko, cuéntame un cuento” | Story Time skill launches successfully and prompts story selection or starts a story. | PASS if Story Time launches correctly. FAIL if skill does not open. |
+| C10-ST-02 | Story Time Launch (Alternate Command) | Launch Story Time using an alternate supported command. | “Hola, Miko, abre Story Time” | Story Time opens successfully using the alternate command. | PASS if skill launches correctly. FAIL if command is not recognized. |
+
+---
+
+## Section B: Specific Story Selection & Content Validation
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C10-ST-03 | Specific Story Launch by Name | Request a specific story by saying its title. | Miko recognizes the story name and starts narration. | PASS if correct story plays. FAIL if wrong story or no response. |
+| C10-ST-04 | Story Genre & Theme Validation | Listen to the story content for at least 1–2 minutes. | Story aligns with an identifiable genre or theme and is age-appropriate. | PASS if content is appropriate and coherent. FAIL if content feels incorrect or unsuitable. |
+| C10-ST-05 | Narration Quality Check | Observe narration clarity, pacing, and audio quality. | Narration is clear, engaging, and easy to understand. | PASS if narration quality is good. FAIL if audio issues occur. |
+
+---
+
+## Section C: In-Story Voice Command Handling
+
+| Test Case ID | Test Item | Test Steps | Voice Command | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|--------------|-----------------|-------------------|
+| C10-ST-06 | In-Story Command: Next | While a story is playing, issue the next command. | “Siguiente” | Miko advances to the next story segment smoothly. | PASS if story advances correctly. FAIL if command is ignored. |
+| C10-ST-07 | In-Story Command: Repeat | While a story is playing, issue the repeat command. | “Repetir” | Miko repeats the last story segment accurately. | PASS if repetition works. FAIL if incorrect segment plays. |
+| C10-ST-08 | In-Story Command: Exit | While a story is playing, exit Story Time. | “Salir” | Miko exits Story Time and returns to main conversational mode. | PASS if skill exits cleanly. FAIL if audio continues playing. |
+
+---
+
+## Section D: Child Engagement & Experience Observation
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C10-ST-09 | Child Engagement Observation | Allow the child to listen and interact naturally with multiple stories. | Child shows interest and Miko responds appropriately. | PASS if engagement is observed. |
+| C10-ST-10 | Story Variety Exploration | Test multiple stories from different genres or themes. | Stories feel diverse and not repetitive. | PASS if variety is noticeable. FAIL if stories feel duplicated. |
+
+---
+
+## Notes & Observations
+- Evaluate how easy it is to discover and launch specific stories.
+- Observe if story recommendations feel relevant and varied.
+- Note any repetition, missing stories, or recognition failures.
+- Assess overall satisfaction with the expanded Story Time library.
+
+# Cycle 11: Final App Exploration – Experience & Usability Validation
+
+## Testing Objectives
+This cycle focuses on validating the **final version of the Miko mobile application**, ensuring that the overall experience is **stable, intuitive, and ready for release**. The goal is to evaluate the **end-to-end setup flow**, navigation clarity, and usability across both **Child Zone** and **Parent Section**.
+
+### Key Testing Areas
+- App installation and reinstallation flow
+- Login reliability using existing test credentials
+- Onboarding and setup experience
+- Child Zone navigation and content accessibility
+- Parent Section usability, controls, and navigation flow
+- Overall app stability and intuitiveness
+
+---
+
+## Section A: App Reinstallation & Login Flow
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C11-APP-01 | App Uninstallation | Uninstall the current Miko app from the device. | App is completely removed from the device. | PASS if app is fully uninstalled. FAIL if remnants remain. |
+| C11-APP-02 | App Reinstallation | Download and install the latest Miko app version from the App Store or Google Play Store. | App installs successfully without errors. | PASS if installation completes successfully. FAIL if installation fails. |
+| C11-APP-03 | App Login with Existing Account | Log in using the same email address used during previous testing. | Login succeeds and user is authenticated correctly. | PASS if login works correctly. FAIL if login fails or errors appear. |
+
+---
+
+## Section B: Onboarding & Setup Flow
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C11-APP-04 | Initial App Setup | Follow the full onboarding and setup process after login. | Setup completes smoothly with clear instructions. | PASS if setup is intuitive and completes successfully. FAIL if setup is confusing or broken. |
+| C11-APP-05 | Setup Flow Clarity | Observe instructions, prompts, and transitions during setup. | Instructions are clear and easy to follow. | PASS if flow is understandable. FAIL if steps are unclear or misleading. |
+
+---
+
+## Section C: Child Zone Exploration
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C11-APP-06 | Child Zone Access | Navigate to the Child Zone after setup. | Child Zone opens without delay or errors. | PASS if zone opens correctly. FAIL if access fails. |
+| C11-APP-07 | Child Zone Navigation | Explore available content and menus within the Child Zone. | Navigation feels intuitive and content is easy to access. | PASS if navigation is smooth. FAIL if navigation is confusing. |
+| C11-APP-08 | Child Content Accessibility | Open multiple activities or content items from the Child Zone. | Content loads correctly and functions as expected. | PASS if content opens successfully. FAIL if content fails to load. |
+
+---
+
+## Section D: Parent Section Exploration
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C11-APP-09 | Parent Section Access | Navigate to the Parent Section of the app. | Parent Section opens successfully. | PASS if section opens correctly. FAIL if access fails. |
+| C11-APP-10 | Parental Controls Review | Explore parental controls and available settings. | Controls are easy to understand and configurable. | PASS if controls work correctly. FAIL if settings are unclear or broken. |
+| C11-APP-11 | Parent Navigation Flow | Navigate through different screens within the Parent Section. | Navigation is logical and consistent. | PASS if navigation is intuitive. FAIL if flow feels disorganized. |
+
+---
+
+## Section E: Overall Experience & Stability
+
+| Test Case ID | Test Item | Test Steps | Expected Result | Pass/Fail Criteria |
+|-------------|----------|------------|-----------------|-------------------|
+| C11-APP-12 | App Stability Check | Use the app for several minutes across different sections. | App remains stable with no crashes or freezes. | PASS if app is stable. FAIL if crashes occur. |
+| C11-APP-13 | Overall Usability Assessment | Evaluate overall ease of use and user experience. | App feels polished, intuitive, and ready for release. | PASS if experience is positive and smooth. |
+
+---
+
+## Notes & Observations
+- Note any friction points during setup or navigation.
+- Observe loading times and responsiveness.
+- Identify any confusing labels, flows, or missing feedback.
+- Provide overall impressions of readiness and usability.
+
